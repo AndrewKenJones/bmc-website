@@ -3,11 +3,11 @@
 
 /* Style variables */
 :root {
-    --main-colour: rgba(68, 123, 59, 1);
+    --main-colour: #9CA495;
     --black: #333;
-    --white: #fff;
-    --header-color: rgba(255, 116, 23, 1);
-    --light-color: rgba(115, 208, 100, 1);
+    --white: #FFF;
+    --header-color: #FF7417;
+    --light-color: #76987F;
     --border: .2rem solid var(--black);
     --box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
 }
@@ -56,6 +56,23 @@ section {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* Heading class style */
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/*.heading img {
+    height: 4rem;
+    margin-bottom: 1rem;
+}*/
+.heading h3 {
+    font-size: 4rem;
+    color: var(--header-color);
+    font-family: 'Great Vibes', cursive;
+}
+
+
 
 /*  Button class style */
 .btn {
@@ -141,8 +158,39 @@ section {
     line-height: 2;
 }
 
+/* About Us content style */
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.about .image {
+    flex: 1 1 40rem;
+}
+.about .image img {
+    width: 100%;
+}
+.about .content {
+    flex: 1 1 40rem;
+}
+.about .content h3 {
+    font-size: 4.5rem;
+    color: var(--header-color);
+    font-family: 'Great Vibes', cursive;
+    padding-bottom: 1rem;
+}
+.about .content p {
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--black);
+    font-size: 1.5rem;
+}
 
-
+/* Our Cafe content style */
+.cafe .box-container {
+    display: grid;
+}
 
 
 
@@ -188,6 +236,9 @@ section {
         justify-content: center;
     }
     .home-bg .home .content h3 {
+        font-size: 5rem;
+    }
+    .about .content h3 {
         font-size: 4rem;
     }
 }
