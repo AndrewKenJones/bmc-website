@@ -4,8 +4,8 @@
 /* Style variables */
 :root {
     --main-colour: rgba(68, 123, 59, 1);
-    --black: black;
-    --white: white;
+    --black: #333;
+    --white: #fff;
     --light-color: rgba(115, 208, 100, 1);
     --border: .2rem solid var(--black);
     --box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
@@ -91,4 +91,61 @@ section {
 .header .flex .navbar a:hover {
     text-decoration: underline;
     color: var(--main-colour);
+}
+#menu-btn {
+    display: none;
+    font-size: 2.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* Media queries */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+        transition: 0.2s linear;
+    }
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
+    }
+
+    .header .flex .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        border-top: var(--border);
+        border-bottom: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: 0.2s linear;
+    }
+.header .flex .navbar.active  {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+    .header .flex .navbar a {
+        display: block;
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
 }
