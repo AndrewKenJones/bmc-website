@@ -1,0 +1,94 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:wght@300;400;700;900&display=swap');
+
+/* Style variables */
+:root {
+    --main-colour: rgba(68, 123, 59, 1);
+    --black: black;
+    --white: white;
+    --light-color: rgba(115, 208, 100, 1);
+    --border: .2rem solid var(--black);
+    --box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+/* Page style reset */
+* {
+    font-family: 'Merriweather', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/* User highlight style */
+*::selection {
+    background-color: var(--main-colour);
+    color: var(--white);
+}
+
+/* Scrollbar style */
+::-webkit-scrollbar {
+    height: 0.5rem;
+    width: 1rem;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-colour);
+}
+
+/* HTML class style */
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding: 6rem;
+}
+
+/* Section class style */
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header class style  */
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+}
+.header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1.5rem 2rem;
+}
+.header .flex .logo img {
+    height: 4.5rem;
+}
+
+/* Navbar class style */
+.header .flex .navbar a {
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+.header .flex .navbar a {
+    margin-left: 2rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+.header .flex .navbar a:hover {
+    text-decoration: underline;
+    color: var(--main-colour);
+}
