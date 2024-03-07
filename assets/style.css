@@ -3,11 +3,11 @@
 
 /* Style variables */
 :root {
-    --main-colour: #9CA495;
+    --main-colour: #5D9D4D;
     --black: #333;
     --white: #FFF;
     --header-color: #FF7417;
-    --light-color: #76987F;
+    --light-color: #7EBA62;
     --border: .2rem solid var(--black);
     --box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
 }
@@ -60,14 +60,10 @@ section {
 /* Heading class style */
 .heading {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
-/*.heading img {
-    height: 4rem;
-    margin-bottom: 1rem;
-}*/
 .heading h3 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: var(--header-color);
     font-family: 'Great Vibes', cursive;
 }
@@ -190,7 +186,30 @@ section {
 /* Our Cafe content style */
 .cafe .box-container {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
 }
+.cafe .box-container .box {
+    text-align: center;
+}
+.cafe .box-container .box img {
+    height: 10rem;
+    margin-bottom: 0.5rem;
+}
+.cafe .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--black);
+    margin: 1rem 0;
+}
+.cafe .box-container .box p {
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+
+
 
 
 
@@ -246,5 +265,8 @@ section {
 @media (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+    .heading h3 {
+        font-size: 4rem;
     }
 }
