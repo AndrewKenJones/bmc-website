@@ -62,10 +62,10 @@ section {
     text-align: center;
     margin-bottom: 3rem;
 }
-.heading img {
+/* .heading img {
     height: 3rem;
     margin-bottom: 1rem;
-}
+} */
 .heading h3 {
     font-size: 4.5rem;
     color: var(--header-color);
@@ -208,6 +208,20 @@ section {
     line-height: 2;
     font-size: 1.5rem;
     color: var(--black);
+}
+
+/* Our Cafe - Gallery content style */
+.cafe .gallery .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.cafe .gallery .box-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* Menu content style */
