@@ -243,8 +243,7 @@ section {
 }
 .menu .box-container .box h3 {
     font-size: 2rem;
-    color: var(--black);
-  
+    color: var(--black); 
 }
 
 /* Our Staff content style */
@@ -253,6 +252,7 @@ section {
     grid-template-columns: repeat(auto-fit, 30rem);
     gap: 1.5rem;
     justify-content: center;
+    margin-bottom: 1.5rem;
 }
 .team .box-container .box {
     text-align: center;
@@ -266,7 +266,13 @@ section {
 .team .box-container .box h3 {
     font-size: 2rem;
     color: var(--black);
+/* Our Team - Apply Now content style  */
 } 
+.team .apply {
+    margin-top: -2rem;
+    text-align: center;
+}
+
 
 
 
