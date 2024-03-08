@@ -269,12 +269,42 @@ section {
 /* Our Team - Apply Now content style  */
 } 
 .team .apply {
-    /* margin-top: -2rem; */
     text-align: center;
 }
+/* Contact us content style */
+.contact .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.contact .row .image {
+    flex: 1 1 50rem;
+}
+.contact .row .image img {
+    width: 100%;
+}
+.contact .row form {
+    flex: 1 1 30rem;
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+}
+.contact .row form h3 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--header-color);
+    font-family: 'Great Vibes', cursive;
+}
+.contact .row form .box {
+    width: 100%;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--light-color);
+    border: var(--border);
+    margin: 1rem 0;
 
-
-
+}
 
 
 /* Media queries */

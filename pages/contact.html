@@ -30,8 +30,24 @@
             <div id="menu-btn" class="fas fa-bars"></div>
         </section>
     </header>
-<!-- About Us section -->
-
+<!-- Contact Us section -->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h3>Contact Us</h3>
+        </div>
+        <div class="row">
+            <div class="image">
+                <img src="../assets/img/holder.jpg" alt="Contact Us">
+            </div>
+            <form action="" method="post">
+                <h3>Book A Table</h3>
+                <input type="text" name="name" required class="box" maxlength="30" placeholder="Enter Your Name">
+                <input type="number" name="number" required class="box" maxlength="12" placeholder="Enter Your Phone No." min="0" max="999999999999" onkeypress="if(this.value.length == 12) return false">
+                <input type="number" name="guests" required class="box" maxlength="20" placeholder="No. Of Guests" min="0" max="99" onkeypress="if(this.value.length == 2) return false">
+                <input type="submit" name="send" value="send message" class="btn">
+            </form>
+        </div>
+    </section>
 
 
 
