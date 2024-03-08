@@ -252,7 +252,7 @@ section {
     grid-template-columns: repeat(auto-fit, 30rem);
     gap: 1.5rem;
     justify-content: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
 }
 .team .box-container .box {
     text-align: center;
@@ -269,7 +269,7 @@ section {
 /* Our Team - Apply Now content style  */
 } 
 .team .apply {
-    margin-top: -2rem;
+    /* margin-top: -2rem; */
     text-align: center;
 }
 
