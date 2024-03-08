@@ -62,12 +62,8 @@ section {
     text-align: center;
     margin-bottom: 3rem;
 }
-/* .heading img {
-    height: 3rem;
-    margin-bottom: 1rem;
-} */
 .heading h3 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     color: var(--header-color);
     font-family: 'Great Vibes', cursive;
 }
@@ -102,6 +98,11 @@ section {
     justify-content: space-between;
     position: relative;
     padding: 1.5rem 2rem;
+}
+.header .flex h3 {
+    font-size: 4rem;
+    color: var(--header-color);
+    font-family: 'Great Vibes', cursive;
 }
 .header .flex .logo img {
     height: 4.5rem;
@@ -222,6 +223,7 @@ section {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border: solid 0.25rem var(--light-color);
 }
 
 /* Menu content style */
@@ -244,6 +246,27 @@ section {
     color: var(--black);
   
 }
+
+/* Our Staff content style */
+.team .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    gap: 1.5rem;
+    justify-content: center;
+}
+.team .box-container .box {
+    text-align: center;
+}
+.team .box-container .box img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    border: solid 0.25rem var(--light-color);
+}
+.team .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--black);
+} 
 
 
 
