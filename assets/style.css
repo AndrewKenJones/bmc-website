@@ -271,7 +271,7 @@ section {
 .team .apply {
     text-align: center;
 }
-/* Contact us content style */
+/* Reservations content style */
 .book .row {
     display: flex;
     align-items: center;
@@ -303,7 +303,6 @@ section {
     color: var(--light-color);
     border: var(--border);
     margin: 1rem 0;
-
 }
 
 
