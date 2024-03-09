@@ -8,6 +8,7 @@
     --white: #FFF;
     --header-color: #FF7417;
     --light-color: #7EBA62;
+    --sign-color: #30B3E9;
     --border: .2rem solid var(--black);
     --box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
 }
@@ -73,16 +74,17 @@ section {
     display: inline-block;
     margin-top: 1rem;
     background-color: var(--main-colour);
+    border-radius: 0.75rem;
     cursor: pointer;
     color: var(--white);
     font-size: 1.8rem;
     padding: 1rem 3rem;
 }
 .btn:hover {
-    background-color: var(--black);
+    background-color: var(--header-color);
 }
 
-/* Header class style  */
+/* Header section style  */
 .header {
     position: sticky;
     top: 0;
@@ -108,7 +110,7 @@ section {
     height: 4.5rem;
 }
 
-/* Navbar class style */
+/* Navbar section style */
 .header .flex .navbar a {
     margin-left: 2rem;
     font-size: 2rem;
@@ -185,6 +187,9 @@ section {
     color: var(--black);
     font-size: 1.5rem;
 }
+.about .content .about-btn {
+    text-align: center;
+}
 
 /* Our Cafe content style */
 .cafe .box-container {
@@ -233,6 +238,7 @@ section {
     gap: 2rem;
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 .menu .box-container .box {
     text-align: center;
@@ -245,8 +251,11 @@ section {
     font-size: 2rem;
     color: var(--black); 
 }
+.menu .menu-btn {
+    text-align: center;
+}
 
-/* Our Staff content style */
+/* Our Team content style */
 .team .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 30rem);
@@ -266,11 +275,11 @@ section {
 .team .box-container .box h3 {
     font-size: 2rem;
     color: var(--black);
-/* Our Team - Apply Now content style  */
 } 
 .team .apply {
     text-align: center;
 }
+
 /* Reservations content style */
 .book .row {
     display: flex;
@@ -304,6 +313,48 @@ section {
     border: var(--border);
     margin: 1rem 0;
 }
+
+/* Footer content style   */
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+.footer .box-container .box {
+    text-align: center;
+}
+.footer .box-container .box i {
+    font-size: 2.5rem;
+    line-height: 6rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 2rem;
+    background-color: var(--light-color);
+    color: var(--white);
+}
+.footer .box-container .box h3 {
+    margin: 0.5rem 0;
+    font-size: 1.6rem;
+    color: var(--black);
+}
+
+.footer .box-container .box p {
+    font-size: 1.4rem;
+    color: var(--black);
+}
+.footer .credit {
+    text-align: right;
+    margin: 2rem;
+    padding-top: 1rem;
+    border-top: var(--border);
+    font-size: 1.25rem;
+    color: var(--black);
+}
+.footer .credit span {
+    color: var(--sign-color);
+}
+
 
 
 /* Media queries */
