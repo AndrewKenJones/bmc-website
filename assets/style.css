@@ -246,6 +246,7 @@ section {
 .menu .box-container .box img {
     width: 100%;
     margin-bottom: 1rem;
+    border: solid 0.25rem var(--light-color);
 }
 .menu .box-container .box h3 {
     font-size: 2rem;
