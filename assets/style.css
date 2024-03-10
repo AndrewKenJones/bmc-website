@@ -81,7 +81,7 @@ section {
     padding: 1rem 3rem;
 }
 .btn:hover {
-    background-color: var(--header-color);
+    background-color: var(--black);
 }
 
 /* Header section style  */
@@ -139,7 +139,7 @@ section {
     background-position: center;
 }
 .home-bg .home {
-    min-height: 70rem;
+    min-height: 97rem;
     display: flex;
     align-items: center;
 }
@@ -279,6 +279,12 @@ section {
 .team .apply {
     text-align: center;
 }
+.team .apply p {
+    line-height: 2;
+    font-size: 1.5rem;
+    color: var(--black);
+    margin-bottom: 1.5rem;
+}
 
 /* Reservations content style */
 .book .row {
@@ -286,6 +292,7 @@ section {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+    margin-bottom: 1.5rem;
 }
 .book .row .image {
     flex: 1 1 50rem;
@@ -312,6 +319,15 @@ section {
     color: var(--light-color);
     border: var(--border);
     margin: 1rem 0;
+}
+.book .content p {
+    line-height: 2;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--black);
+}
+.book .content .contact-btn {
+    text-align: center;
 }
 
 /* Footer content style   */
@@ -345,7 +361,7 @@ section {
 }
 .footer .credit {
     text-align: right;
-    margin: 2rem;
+    margin: 1rem;
     padding-top: 1rem;
     border-top: var(--border);
     font-size: 1.25rem;
