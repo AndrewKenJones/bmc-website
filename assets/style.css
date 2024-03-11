@@ -190,6 +190,70 @@ section {
 .about .content .about-btn {
     text-align: center;
 }
+/* About Us - News content style */
+.news {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.news .image {
+    flex: 1 1 40rem;
+}
+.news .image img {
+    width: 100%;
+}
+.news .content {
+    flex: 1 1 40rem;
+}
+.news .content h3 {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--header-color);
+    font-family: 'Great Vibes', cursive;
+    padding-bottom: 1rem;
+}
+.news .content p {
+    line-height: 2;
+    color: var(--black);
+    font-size: 1.5rem;
+}
+.news .content p span {
+    font-size: 2rem;
+    color: var(--header-color);
+}
+/* About Us - Video content style */
+.events {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.events .video {
+    flex: 1 1 40rem;
+}
+.events .image iframe {
+    width: 100%;
+}
+.events .content {
+    flex: 1 1 40rem;
+}
+.events .content h3 {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--header-color);
+    font-family: 'Great Vibes', cursive;
+    padding-bottom: 1rem;
+}
+.events .content p {
+    line-height: 2;
+    color: var(--black);
+    font-size: 1.5rem;
+}
+.events .content p span {
+    font-size: 2rem;
+    color: var(--header-color);
+}
 
 /* Our Cafe content style */
 .cafe .box-container {
@@ -215,7 +279,6 @@ section {
     font-size: 1.5rem;
     color: var(--black);
 }
-
 /* Our Cafe - Gallery content style */
 .cafe .gallery .box-container {
     display: grid;
@@ -229,6 +292,36 @@ section {
     width: 100%;
     object-fit: cover;
     border: solid 0.25rem var(--light-color);
+}
+/* Our Cafe - Location section */
+.location {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.location .map {
+    flex: 1 1 40rem;
+}
+.location .map iframe {
+    border: none;
+    border-radius: 0.75rem;
+    width: 100%;
+}
+.location .content {
+    flex: 1 1 40rem;
+}
+.location .content h3 {
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--header-color);
+    font-family: 'Great Vibes', cursive;
+    padding-bottom: 1rem;
+}
+.location .content p {
+    line-height: 2;
+    color: var(--black);
+    font-size: 1.5rem;
 }
 
 /* Menu content style */
@@ -251,6 +344,13 @@ section {
 .menu .box-container .box h3 {
     font-size: 2rem;
     color: var(--black); 
+}
+.menu p {
+    text-align: center;
+    line-height: 2;
+    color: var(--black);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 .menu .menu-btn {
     text-align: center;
