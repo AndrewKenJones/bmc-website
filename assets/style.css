@@ -3,7 +3,7 @@
 
 /* Style variables */
 :root {
-    --main-colour: #5D9D4D;
+    --main-color: #5D9D4D;
     --black: #333;
     --white: #FFF;
     --header-color: #FF7417;
@@ -27,7 +27,7 @@
 
 /* User highlight style */
 *::selection {
-    background-color: var(--main-colour);
+    background-color: var(--light-color);
     color: var(--white);
 }
 
@@ -40,7 +40,7 @@
     background-color: transparent;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: var(--main-colour);
+    background-color: var(--main-color);
 }
 
 /* HTML class style */
@@ -72,16 +72,19 @@ section {
 /*  Button class style */
 .btn {
     display: inline-block;
-    margin-top: 1rem;
-    background-color: var(--main-colour);
+    margin: 0.75rem;
+    background-color: var(--light-color);
     border-radius: 0.75rem;
     cursor: pointer;
     color: var(--white);
     font-size: 1.8rem;
     padding: 1rem 3rem;
+    cursor: pointer;
 }
 .btn:hover {
     background-color: var(--black);
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 
 /* Header section style  */
@@ -100,6 +103,7 @@ section {
     justify-content: space-between;
     position: relative;
     padding: 1.5rem 2rem;
+    cursor: pointer;
 }
 .header .flex h3 {
     font-size: 4rem;
@@ -116,14 +120,10 @@ section {
     font-size: 2rem;
     color: var(--black);
 }
-.header .flex .navbar a {
-    margin-left: 2rem;
-    font-size: 2rem;
-    color: var(--black);
-}
+
 .header .flex .navbar a:hover {
     text-decoration: underline;
-    color: var(--main-colour);
+    color: var(--main-color);
 }
 #menu-btn {
     display: none;
@@ -220,7 +220,7 @@ section {
 }
 .news .content p span {
     font-size: 2rem;
-    color: var(--header-color);
+    color: var(--light-color);
 }
 /* About Us - Video content style */
 .events {
@@ -252,7 +252,7 @@ section {
 }
 .events .content p span {
     font-size: 2rem;
-    color: var(--header-color);
+    color: var(--light-color);
 }
 
 /* Our Cafe content style */
@@ -434,7 +434,7 @@ section {
 /* Footer content style   */
 .footer .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 1.5rem;
     align-items: flex-start;
 }
@@ -457,7 +457,7 @@ section {
 }
 
 .footer .box-container .box p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: var(--black);
 }
 .footer .credit {
