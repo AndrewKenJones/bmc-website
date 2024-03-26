@@ -1,5 +1,4 @@
-<!-- Reservation Form PHP -->
-<php
+<?php
 $db_name = 'mysql:host=localhost;dbname=contact_db';
 $username = 'root';
 $password = '';
@@ -48,13 +47,13 @@ if(isset($_POST['send'])){
 
 <body>
 <!-- PHP Message -->
-<?php
+<php
 if(isset($message)){
     foreach($message as $message){
         echo '
         <div class="message">
-            <span></span>
-            <i class="fa fas-time" onclick="this.parentElemet.remove();"></i>
+            <span>.$message.</span>
+            <i class="fa fas-time" onclick="this.parentElement.remove();"></i>
         </div>
         ';
     }
