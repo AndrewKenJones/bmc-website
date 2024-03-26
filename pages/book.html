@@ -1,5 +1,5 @@
 <!-- Reservation Form PHP -->
-<?php
+<php
 $db_name = 'mysql:host=localhost;dbname=contact_db';
 $username = 'root';
 $password = '';
@@ -8,20 +8,19 @@ $conn = new PDO($db_name, $username, $password);
 
 if(isset($_POST['send'])){
 
-<!-- Guest Name -->
+
     $name = $_POST['name'];
     $name = $ filter_var($name, FILTER_SANITIZE_STRING);
-<!-- Guest Phone Number -->
+
     $number = $_POST['number'];
     $number = $ filter_var($number, FILTER_SANITIZE_STRING);
-<!-- No. Of Guests -->
+
     $guests = $_POST['guests'];
     $guests = $ filter_var($guests, FILTER_SANITIZE_STRING);
 
     $select_contact = $conn->prepare("SELECT * FORM 'contact_form' WHERE name = ? AND number = ? AND guests = ?");
     $select_contact->execute([$name, $number, $guests]);
 
-<!-- Message shown -->
     if($select_contact->rowCount() > 0){
         $message[] = 'Message has already been sent.';
     }else{
