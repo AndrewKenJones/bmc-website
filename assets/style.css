@@ -421,11 +421,14 @@ section {
     border: var(--border);
     margin: 1rem 0;
 }
+.book .row form ::placeholder {
+    color: var(--light-color);
+}
 .book .content p {
     line-height: 2;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: var(--black);
+    color: var(--black-color);
 }
 .book .content .contact-btn {
     text-align: center;
