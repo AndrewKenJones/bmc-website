@@ -87,6 +87,28 @@ section {
     transition: 0.3s;
 }
 
+/* PHP Message style */
+.message {
+    background-color: var(--light-color);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+.message span {
+    color: var(--white);
+    font-size: 2rem;
+}
+.message i {
+    color: var(--black);
+}
+.message i:hover {
+    font-size: 2.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
 /* Header section style  */
 .header {
     position: sticky;
