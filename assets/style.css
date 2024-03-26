@@ -475,8 +475,6 @@ section {
     color: var(--sign-color);
 }
 
-
-
 /* Media queries */
 @media (max-width: 991px) {
     html {

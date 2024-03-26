@@ -15,7 +15,6 @@
 
 <body>
 
-
 <!-- Header / Navbar section -->
     <header class="header">
         <section class="flex">
@@ -38,14 +37,14 @@
             <div class="image">
                 <img src="../assets/img/book-girl.jpg" alt="Contact Us">
             </div>
-            <form action="" method="post">
+            <form action="res.php" method="post">
                 <h3>Book A Table</h3>
                 <input type="text" name="name" id="name" required class="box" maxlength="30" placeholder="Enter Your Name">
                 <input type="number" name="phone" id="phone" required class="box" min="0" maxlength="12" placeholder="Enter Your Phone No." onkeypress="if(this.value.length == 12) return false">
                 <input type="number" name="guests" id="guests" required class="box" min="1" maxlength="2" placeholder="No. Of Guests" onkeypress="if(this.value.length == 2) return false">
                 <input type="date" name="date" id="date" required class="box">
                 <input type="time" name="time" id="time" required class="box">
-                <input type="submit" name="send" id="send" value="Book Now" class="btn">
+                <input type="submit" name="submit" id="submit" value="Book Now" class="btn">
             </form>
         </div>
 <!-- Event / Contact Us section -->

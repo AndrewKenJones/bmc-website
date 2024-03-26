@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monstera Coffee / Menu</title>
+    <title>Monstera Coffee / Contact Us</title>
         <!-- Font Awesome cdn link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <!-- CSS file link -->
@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
 <!-- Header / Navbar section -->
     <header class="header">
         <section class="flex">
@@ -30,43 +31,32 @@
             <div id="menu-btn" class="fas fa-bars"></div>
         </section>
     </header>
-<!-- Menu section -->
-    <section class="menu" id="menu">
-        <div class="heading">
-            <!-- <img src="../assets/img/"text-divider" alt="Leafy text divider"> -->
-            <h3>Our Menu</h3>
+<!-- Reservation section -->
+    <section class="book" id="book">
+        <div class="row">
+            <div class="image">
+                <img src="../assets/img/book-girl.jpg" alt="Contact Us">
+            </div>
+            <form action="res.php" method="post">
+                <h3>Book A Table</h3>
+                <input type="text" name="name" id="name" required class="box" maxlength="30" placeholder="Enter Your Name">
+                <input type="number" name="phone" id="phone" required class="box" min="0" maxlength="12" placeholder="Enter Your Phone No." onkeypress="if(this.value.length == 12) return false">
+                <input type="number" name="guests" id="guests" required class="box" min="1" maxlength="2" placeholder="No. Of Guests" onkeypress="if(this.value.length == 2) return false">
+                <input type="date" name="date" id="date" required class="box">
+                <input type="time" name="time" id="time" required class="box">
+                <input type="submit" name="submit" id="submit" value="Book Now" class="btn">
+            </form>
         </div>
-        <div class="box-container">
-            <div class="box">
-                <img src="../assets/img/menu1.jpg" alt="Menu item 1">
-                <h3>Bagels & Sandwiches</h3>
+<!-- Event / Contact Us section -->
+        <div class="content">
+            <div class="heading">
+                <h3>Have An Event In Mind?</h3>
             </div>
-            <div class="box">
-                <img src="../assets/img/menu2.jpg" alt="Menu item 2">
-                <h3>Various Coffees</h3>
-            </div>
-            <div class="box">
-                <img src="../assets/img/menu3.jpg" alt="Menu item 3">
-                <h3>Iced Coffees</h3>
-            </div>
-            <div class="box">
-                <img src="../assets/img/menu4.jpg" alt="Menu item 4">
-                <h3>Hot Chocolate</h3>
-            </div>
-            <div class="box">
-                <img src="../assets/img/menu5.jpg" alt="Menu item 5">
-                <h3>Cakes & Pastries</h3>
-            </div>
-            <div class="box">
-                <img src="../assets/img/menu6.jpg" alt="Menu item 6">
-                <h3>Cafe Lattes</h3>
-            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, nisi. Tempore quae aliquid tenetur officiis aliquam dolor architecto, suscipit at!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In officiis nemo sunt ut aliquam cumque dolor fuga tempora pariatur necessitatibus, asperiores maiores dolorum iusto quibusdam.</p>
+        <div class="contact-btn">
+            <a href="#" class="btn">Contact Our Team</a>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur cumque culpa laborum a asperiores nisi.</p>
-        <div class="menu-btn">
-            <a href="#" class="btn">Download Our Full Menu</a>
-            <a href="book.php" class="btn">Book A Table</a>
-            </div>
     </section>
 <!-- Footer section -->
     <section class="footer">
