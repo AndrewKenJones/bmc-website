@@ -1,3 +1,4 @@
+<!-- PHP Query section -->
 <?php
 
 $db_name = 'mysql:host=localhost;dbname=contact_db';
@@ -76,7 +77,7 @@ if(isset($_POST['submit'])){
         }
      }
    ?>
-<!-- Header / Navbar section
+<!-- <!-- Header / Navbar section  -->
     <header class="header">
         <section class="flex">
             <a href="../index.html" class="logo"><img src="../assets/img/mc-icon.png" alt="Website logo image"></a>
@@ -92,7 +93,7 @@ if(isset($_POST['submit'])){
             <div id="menu-btn" class="fas fa-bars"></div>
         </section>
     </header>
-Reservation section
+<!-- Reservation section -->
     <section class="book" id="book">
         <div class="row">
             <div class="image">
@@ -108,7 +109,7 @@ Reservation section
                 <input type="submit" name="submit" id="submit" value="Book Now" class="btn">
             </form>
         </div>
-Event / Contact Us section
+<!-- Event / Contact Us section -->
         <div class="content">
             <div class="heading">
                 <h3>Have An Event In Mind?</h3>
@@ -119,7 +120,7 @@ Event / Contact Us section
             <a href="#" class="btn">Contact Our Team</a>
         </div>
     </section>
-Footer section
+<!-- Footer section -->
     <section class="footer">
         <div class="box-container">
             <div class="box">
